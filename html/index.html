@@ -14,15 +14,16 @@
 <script src="../resource/js/ui.js"></script>
 </head>
 <body>
-<div id="wrap">
-	<div id="masthead" class="masthead">
-		<div class="inner">
-			<h1 class="title"><a href="#none">동국제강 | INTERGIS</a></h1>
+<div class="wrap">
+	<header class="header">
+		<div class="inner_header">
+			<h1 class="sec_title"><a href="#none"><span class="offscreen">동국제강 INTERGIS 홈</span></a></h1>
 		</div>
-	</div>
+	</header>
 	<div id="container">
-		<div class="nav_quick">
-			<ul>
+		<h2 class="offscreen">메인메뉴</h2>
+		<nav class="gnb">
+			<ul class="list_gnb">
 				<li><a href="#none">선적배정 현황</a></li>
 				<li><a href="#none">COPINO 수신조회</a></li>
 				<li><a href="#none">컨테이너 현황조회</a></li>
@@ -34,111 +35,121 @@
 				<li><a href="#none">COPINO 수신조회</a></li>
 				<li><a href="#none">컨테이너 현황조회</a></li>
 			</ul>
-		</div>
+		</nav>
 		<div class="contents">
-			<div class="sec_top">
-				<div class="slide_area">
-					<h2 class="tit blind">메인 copy</h2>
-					<div class="main_slide">
+			<div class="inner_top">
+				<section class="sec_slide">
+					<h2 class="sec_tit offscreen">메인 copy</h2>
+					<div class="slide">
 						<div>
 							<a href="#none">
 								<img src="../resource/images/banner_01.png" alt="">
 							</a>
-							<div class="slide_cont">
-								<span>최고경쟁력을 갖춘</span>
-								<strong>Total Logistics Solution<br>
-								물류기업</strong>
+							<div class="cont_slide">
+								<p class="copy_slide">최고경쟁력을 갖춘
+								<em>Total Logistics Solution<br>
+								물류기업</em></p>
 							</div>
 						</div>
 						<div>
 							<a href="#none">
 								<img src="../resource/images/banner_01.png" alt="">
 							</a>
-							<div class="slide_cont">
-								<span>최고경쟁력을 갖춘</span>
-								<strong>Total Logistics Solution<br>
-								물류기업</strong>
+							<div class="cont_slide">
+								<p class="copy_slide">최고경쟁력을 갖춘
+									<em>Total Logistics Solution<br>
+									물류기업</em></p>
 							</div>
 						</div>
 						<div>
 							<a href="#none">
 								<img src="../resource/images/banner_01.png" alt="">
 							</a>
-							<div class="slide_cont">
-								<span>최고경쟁력을 갖춘</span>
-								<strong>Total Logistics Solution<br>
-								물류기업</strong>
+							<div class="cont_slide">
+								<p class="copy_slide">최고경쟁력을 갖춘
+									<em>Total Logistics Solution<br>
+									물류기업</em></p>
 							</div>
 						</div>
 					</div>
-					<ul class="page_state">
+					<ul class="list_pagenation">
 						<li class="crnt">1</li>
 						<li>/</li>
 						<li class="total">3</li>
 					</ul>
-				</div>
-				<div class="shortcut slider">
-					<h2 class="tit">바로가기 서비스</h2>
-					<ul>
-						<li class="weather"><a href="#none"  onclick="window.open('popup_weather.html','','width=800,height=540,left=0')">세계날씨<span>Weather</span></a></li>
-						<li class="time"><a href="#none" onclick="window.open('popup_time.html','','width=800,height=540,left=0')">세계시각<span>World time</span></a></li>
-						<li class="ex_rate"><a href="#none" onclick="window.open('popup_currency.html','','left=0,top=0,width=580,height=540,left=0')">환율<span>Currency</span></a></li>
-						<li class="oil"><a href="#none" onclick="window.open('popup_oilprice.html','','left=0,top=0,width=250,height=540,left=0')">유가정보<span>Oil price information</span></a></li>
+				</section>
+				<section class="sec_service">
+					<h2 class="sec_tit">바로가기 서비스</h2>
+					<ul class="list_service">
+						<li class="item_weather">
+							<a href="#none"  onclick="window.open('popup_weather.html','','width=800,height=540,left=0')" aria-haspopup="dialog">세계날씨<span class="txt_eng">Weather</span></a>
+						</li>
+						<li class="item_time">
+							<a href="#none" onclick="window.open('popup_time.html','','width=800,height=540,left=0')" aria-haspopup="dialog">세계시각<span class="txt_eng">World time</span></a>
+						</li>
+						<li class="item_rate">
+							<a href="#none" onclick="window.open('popup_currency.html','','left=0,top=0,width=580,height=540,left=0')" aria-haspopup="dialog">환율<span class="txt_eng">Currency</span></a>
+						</li>
+						<li class="item_oil">
+							<a href="#none" onclick="window.open('popup_oilprice.html','','left=0,top=0,width=250,height=540,left=0')">유가정보<span class="txt_eng" aria-haspopup="dialog">Oil price information</span></a>
+						</li>
 					</ul>
 					<span class="bar"></span>
-				</div>
+				</section>
 			</div>
-			<div class="sec_bottom">
-				<div class="notice">
-					<div class="calendar">
-						<h2 class="tit blind">현재날짜</h2>
+			<div class="inner_bottom">
+				<section class="sec_notice">
+					<h2 class="offscreen">공지사항</h2>
+					<div class="area_calendar">
+						<h3 class="offscreen">오늘 날짜</h3>
 						<img src="../resource/images/bg_day.png" alt="">
-						<div class="cont">
-							<span>2018.07</span>
-							<strong>20</strong>
+						<div class="box_date">
+							<span class="txt_month">2018.07</span>
+							<strong class="txt_date">20</strong>
 						</div>
 					</div>
-					<div class="board">
-						<h2 class="tit">공지사항</h2>
-						<div class="cont box">
-							<strong>최고의 물류기업 인터지스 포털이 신규 오픈하였습니다 !</strong>
-							<p>인터지스는 고객이 필요한 물류에 대한 책임을 다하기 위해 미래를 향한 새로운 길을 열어가고 있습니다.</p>
+					<div class="area_notice">
+						<h3 class="sec_tit">공지사항</h2>
+						<div class="box_cont">
+							<strong class="tit_cont">최고의 물류기업 인터지스 포털이 신규 오픈하였습니다 !</strong>
+							<p class="txt_cont">인터지스는 고객이 필요한 물류에 대한 책임을 다하기 위해 미래를 향한 새로운 길을 열어가고 있습니다.</p>
 						</div>
 						<a href="#none" class="more">더보기</a>
 					</div>
-				</div>
-				<div class="tab_area">
-					<h2 class="tit blind">게시판</h2>
-					<ul class="tab_list">
-						<li class="on"><a href="#none">FAQ</a></li>
-						<li><a href="#none">Q&amp;A</a></li>
-						<li><a href="#none">자유게시판</a></li>
-					</ul>
-					<div class="tab_cont box on">
+				</section>
+				<section class="sec_board">
+					<h2 class="sec_tit offscreen">게시판</h2>
+					<div class="tab_list" role="tablist">
+						<button class="btn_tab on" type="button" role="tab" aria-selected="true">FAQ</button>
+						<button class="btn_tab" type="button" role="tab" aria-selected="false">Q&amp;A</button>
+						<button class="btn_tab" type="button" role="tab" aria-selected="false">자유게시판</button>
+					</div>
+					<div class="tab_panel on">
 						<ul>
-							<li><a href="#none">인터지스는 어떠한 서비스를 제공하나요?</a></li>
-							<li><a href="#none">서비스 신청 방법은?</a></li>
-							<li><a href="#none">인터지스 신규 포털 사용 메뉴얼은?</a></li>
+							<li class="item"><a href="#none">인터지스는 어떠한 서비스를 제공하나요?</a></li>
+							<li class="item"><a href="#none">서비스 신청 방법은?</a></li>
+							<li class="item"><a href="#none">인터지스 신규 포털 사용 메뉴얼은?</a></li>
 						</ul>
 					</div>
-					<div class="tab_cont box">
+					<div class="tab_panel">
 						<ul>
-							<li><a href="#none">Q&A 리스트</a></li>
-							<li><a href="#none">Q&A 리스트</a></li>
-							<li><a href="#none">Q&A 리스트</a></li>
+							<li class="item"><a href="#none">Q&A 리스트</a></li>
+							<li class="item"><a href="#none">Q&A 리스트</a></li>
+							<li class="item"><a href="#none">Q&A 리스트</a></li>
 						</ul>
 					</div>
-					<div class="tab_cont box">
+					<div class="tab_panel">
 						<ul>
-							<li><a href="#none">자유게시판 리스트</a></li>
-							<li><a href="#none">자유게시판 리스트</a></li>
-							<li><a href="#none">자유게시판 리스트</a></li>
+							<li class="item"><a href="#none">자유게시판 리스트</a></li>
+							<li class="item"><a href="#none">자유게시판 리스트</a></li>
+							<li class="item"><a href="#none">자유게시판 리스트</a></li>
 						</ul>
 					</div>
-				</div>
+				</section>
 			</div>
-			<div class="partners">
-				<ul>
+			<aside class="partners">
+				<h2 class="offscreen">협력사</h2>
+				<ul class="list_partners">
 					<li><a href="#none"><img src="../resource/images/partners_01.png" alt="안전신문고"></a></li>
 					<li><a href="#none"><img src="../resource/images/partners_02.png" alt="해양수산부"></a></li>
 					<li><a href="#none"><img src="../resource/images/partners_03.png" alt="행정안전부 정부청사관리본부"></a></li>
@@ -152,7 +163,7 @@
 					<li><a href="#none"><img src="../resource/images/partners_05.png" alt="관세청"></a></li>
 					<li><a href="#none"><img src="../resource/images/partners_06.png" alt="한국정보화진흥원"></a></li>
 				</ul>
-			</div>
+			</aside>
 		</div>
 		
 	</div>

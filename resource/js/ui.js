@@ -10,14 +10,14 @@ var itergis = {
 
 	slickSlide : function() {
 
-		$('.nav_quick ul').slick({
+		$('.gnb ul').slick({
 			slidesToShow:7,
 			slidesToScroll:1,
 			arrows:true,
 			speed:300
 		});
 
-		$('.main_slide').slick({
+		$('.slide').slick({
 			infinite:true,
 			autoplay:true,
 			arrows:false,
@@ -25,15 +25,15 @@ var itergis = {
 			speed:800
 		});
 
-		var length = $('.main_slide .slick-dots li').length;
+		var length = $('.slide .slick-dots li').length;
 
-		$('.main_slide .total').text(length);
-		$('.main_slide').on('afterChange', function(event, slick, currentSlide){
+		$('.slide .total').text(length);
+		$('.slide').on('afterChange', function(event, slick, currentSlide){
 	        var text = currentSlide + 1;
-	        $('.page_state .crnt').text(text);
+	        $('.list_pagenation .crnt').text(text);
 	    });
 
-		$('.shortcut ul').slick({
+		$('.sec_service ul').slick({
 			infinite:true,
 			slidesToShow:4,
 			slidesToScroll:4,
@@ -53,28 +53,28 @@ var itergis = {
 
 	tab : function(){
 
-		var $tab = $('.tab_area'),
-			$tab_nav = $tab.find('.tab_list li'),
-			$tab_cont = $tab.find('.tab_cont');
+		var $tab = $('.sec_board'),
+			$tab_nav = $tab.find('.btn_tab'),
+			$tab_panel = $tab.find('.tab_panel');
 
 		$tab_nav.on('click', function(){
-
+			console.log('hi')
 			var	$this = $(this),
 				idx = $(this).index();
 
-			$tab_nav.removeClass('on');
-			$this.addClass('on');
+			$tab_nav.removeClass('on').attr('aria-selected', 'false');
+			$this.addClass('on').attr('aria-selected', 'true');
 			
-			$tab_cont.removeClass('on');
-			$tab_cont.eq(idx).addClass('on');
+			$tab_panel.removeClass('on');
+			$tab_panel.eq(idx).addClass('on');
 		});
 	},
 
 	calender : function(){
 
-		var $calendar = $('.calendar'),
-			$cont_ym = $calendar.find('span'),
-			$cont_day = $calendar.find('strong');
+		var $area_calendar = $('.box_date'),
+			$cont_ym = $area_calendar.find('.txt_month'),
+			$cont_day = $area_calendar.find('.txt_date');
 
 		var objDate = new Date();
 
