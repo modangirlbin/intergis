@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>환율 | INTERGIS</title>
+<link rel="stylesheet" type="text/css" href="../resource/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="../resource/css/style.css" />
+<link rel="stylesheet" type="text/css" href="../resource/css/slick.css" />
+<script src="../resource/js/jquery-1.12.4.js"></script>
+<script src="../resource/js/slick.js"></script>
+<script src="../resource/js/ui.js"></script>
+<style>
+table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,  th {
+    border: 1px solid #ddd;
+    padding: 12px 10px 10px 10px!important;
+    font-style:12px
+}
+
+ tr:nth-child(even){background-color: #f2f2f2;}
+
+ tr:hover {background-color: #ddd;}
+
+ th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+</style>
+</head>
+<body>
+<div class="popup">
+	<div class="pop_logo">
+		<img src="../resource/images/pop_logo.png" alt="INTERGIS">
+	</div>
+	<div class="pop_contents">
+		<div class="pop_inner">
+			<div class="tit">
+				환율
+			</div>
+			<!-- 위젯 박스 -->
+			<div class="wizet_box">
+				<script type="text/javascript"   src="https://ko.exchange-rates.org/GetCustomContent.aspx?sid=RT000K2Z9&amp;type=RatesTable&amp;stk=07OX84F3UM" charset="utf-8"></script>
+				<div>소스: <a href="https://ko.exchange-rates.org/" rel="nofollow">ko.exchange-rates.org</a></div>
+			</div>
+			<!-- // 위젯 박스 -->
+		</div>
+		
+	</div>
+</div>
+</body>
+</html>
