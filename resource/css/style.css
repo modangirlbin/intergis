@@ -163,4 +163,5 @@
 .popup .pop_logo img{position:absolute; top:15px; left:23px}
 .popup .pop_contents{padding:10px; background-color:#eff2f5}
 .popup .pop_inner{padding:16px 20px 20px 20px; background-color:#fff}
-.popup .pop_inner .tit{font-size:18px; margin-bottom:5px}
+.popup .pop_inner .tit{margin-bottom:5px; font-size:18px; font-weight:normal;}
+.popup .pop_inner .cont{margin-top:30px}
