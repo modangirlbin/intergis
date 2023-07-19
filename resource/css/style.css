@@ -77,7 +77,7 @@
 
 .sec_slide{position:relative; float:left; width:650px; height:270px}
 /*.sec_slide .indicator{position:absolute; left:50%; bottom:10px; width:200px}*/
-.sec_slide div{position:relative}
+.sec_slide .slide li{position:relative}
 .sec_slide .cont_slide{position:absolute; left:0; top:70px; width:100%; text-align:center}
 .sec_slide .cont_slide .copy_slide{font-size:16px; line-height:20px; color:#fff}
 .sec_slide .cont_slide .copy_slide em{display:block; margin-top:5px; font-size:36px; line-height:45px}

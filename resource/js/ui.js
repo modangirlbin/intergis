@@ -33,13 +33,13 @@ var itergis = {
 	        $('.list_pagenation .crnt').text(text);
 	    });
 
-		$('.sec_service ul').slick({
-			infinite:true,
-			slidesToShow:4,
-			slidesToScroll:4,
-			arrows:true,
-			speed:800
-		});
+		// $('.sec_service ul').slick({
+		// 	infinite:true,
+		// 	slidesToShow:4,
+		// 	slidesToScroll:4,
+		// 	arrows:true,
+		// 	speed:800
+		// });
 			
 		$('.partners ul').slick({
 			infinite:false,
